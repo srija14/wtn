@@ -1,0 +1,16 @@
+#include<stdio.h>
+int ispalinNum(int input1)
+{
+int temp=input1;
+int re=0,sum=0;
+while(input1!=0)
+{
+rem=input1%10;
+sum=sum*10+rem;
+input1=input1/10;
+}
+if(sum==temp)
+  return 2;
+else
+  return 1;
+}
